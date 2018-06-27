@@ -23,9 +23,9 @@
 			xtal36: xtal36@7 {
 				reg = <0x7>;
 				compatible = "fixed-clock";
-                #clock-cells = <0>;
-                clock-frequency = <3686400>;
-                clock-output-names = "xtal36";
+				#clock-cells = <0>;
+				clock-frequency = <3686400>;
+				clock-output-names = "xtal36";
 			};
 		};
 	};
@@ -36,10 +36,10 @@
             /* needed to avoid dtc warning */
             #address-cells = <1>;
             #size-cells = <0>;
-			status = "okay";
-			max14830_1: max14830_1@0 {
-				compatible = "maxim,max14830";
-                reg = <0>; /* CE0 */
+            status = "okay";
+            max14830_1: max14830_1@0 {
+            	compatible = "maxim,max14830";
+            	reg = <0>; /* CE0 */
                 clocks = <0x45>;
                 clock-names = "xtal";
                 spi-max-frequency = <12000000>;
