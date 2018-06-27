@@ -26,7 +26,7 @@
                 #clock-cells = <0>;
                 clock-frequency = <3686400>;
                 clock-output-names = "xtal36";
-			}
+			};
 		};
 	};
 
