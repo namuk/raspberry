@@ -40,7 +40,7 @@
 			max14830_1: max14830_1@0 {
 				compatible = "maxim,max14830";
 				reg = <0>; /* CE0 */
-				clocks = <0x45>;
+				clocks = <&xtal36>;
 				clock-names = "xtal";
 				spi-max-frequency = <12000000>;
 				status = "okay";
