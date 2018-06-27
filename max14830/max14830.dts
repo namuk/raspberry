@@ -31,26 +31,26 @@
 	};
 
 	fragment@3 {
-        target = <&spi0>;
-        __overlay__ {
-            /* needed to avoid dtc warning */
-            #address-cells = <1>;
-            #size-cells = <0>;
-            status = "okay";
-            max14830_1: max14830_1@0 {
-            	compatible = "maxim,max14830";
-            	reg = <0>; /* CE0 */
-                clocks = <0x45>;
-                clock-names = "xtal";
-                spi-max-frequency = <12000000>;
-                status = "okay";
-                pinctrl-names = "default";
-                pinctrl-0 = <&max14830_pins>;
-                interrupt-parent = <&gpio>;
-                interrupts = <4 0x2>; /* falling edge */
-            };
-        };
-    };
+		target = <&spi0>;
+		__overlay__ {
+			/* needed to avoid dtc warning */
+			#address-cells = <1>;
+			#size-cells = <0>;
+			status = "okay";
+			max14830_1: max14830_1@0 {
+				compatible = "maxim,max14830";
+				reg = <0>; /* CE0 */
+				clocks = <0x45>;
+				clock-names = "xtal";
+				spi-max-frequency = <12000000>;
+				status = "okay";
+				pinctrl-names = "default";
+				pinctrl-0 = <&max14830_pins>;
+				interrupt-parent = <&gpio>;
+				interrupts = <4 0x4>; /* falling edge */
+			};
+		};
+	};
 
 	fragment@4 {
 		target = <&gpio>;
