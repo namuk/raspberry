@@ -43,11 +43,10 @@
 				clocks = <&xtal36>;
 				clock-names = "xtal";
 				spi-max-frequency = <12000000>;
-				status = "okay";
 				pinctrl-names = "default";
 				pinctrl-0 = <&max14830_pins>;
 				interrupt-parent = <&gpio>;
-				interrupts = <4 0x4>; /* falling edge */
+				interrupts = <4 0x2>; /* falling edge */
 			};
 		};
 	};
