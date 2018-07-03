@@ -10,6 +10,6 @@ ser = serial.Serial(
 )
 
 while 1:
-	ser.write("COM2\r\n")
-	x = ser.read(1)
+	ser.write("COM2")
+	x = ser.readline()
 	print x
