@@ -1,7 +1,7 @@
 import serial, fcntl, struct
 
 ser = serial.Serial(
-	port = '/dev/ttyMAX3',
+	port = '/dev/ttyMAX2',
 	baudrate = 115200,
 	parity = serial.PARITY_NONE,
 	stopbits = serial.STOPBITS_ONE,
