@@ -67,6 +67,8 @@ def rs485_init():
 def rs485_test_send(port):
 	for i in test_state:
 		port.write(i)
+	s = port.readline()
+	print(port.port + ":" + s)
 
 def rs485_test_read(port):
 	count = 0
@@ -96,6 +98,8 @@ def rs232_init():
 def rs232_test_send(port):
 	for i in test_state:
 		port.write(i)
+	s = port.readline()
+	print(port.port + ":" + s)
 
 def rs232_test_read(port):
 	count = 0
