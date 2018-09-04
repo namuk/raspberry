@@ -33,10 +33,10 @@ def gpio_set():
 	for i in outputs:
 		state = GPIO.input(i)
 		if (state == 0):
-			time.sleep(1)
+			time.sleep(0.1)
 			GPIO.output(i, 1)
 		else:
-			time.sleep(1)
+			time.sleep(0.1)
 			GPIO.output(i, 0)
 
 def gpio_state():
